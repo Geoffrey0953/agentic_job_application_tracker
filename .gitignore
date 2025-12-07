@@ -1,0 +1,53 @@
+# Root level ignores
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Documentation build
+docs/_build/
+site/
+
+# Misc
+*.orig
+.cache/
+
+AGENTIC_FEATURES.md
+SETUP_GUIDE.md
+ARCHITECTURE.md
+ATS_SCORE_EXPLANATION.md
+RESUME_BULLET_POINTS.md
