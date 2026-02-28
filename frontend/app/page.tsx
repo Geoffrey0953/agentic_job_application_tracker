@@ -315,23 +315,30 @@ export default function Dashboard() {
                     <div className="flex items-center gap-3 lg:flex-col lg:items-end">
                       <div className="flex gap-2">
                         {app.resume_content && (
-                          <button 
+                          <button
                             onClick={() => viewApplicationDetails(app)}
-                            className="p-2 text-blue-600 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors" 
+                            className="p-2 text-blue-600 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors"
                             title="View Resume"
                           >
                             <FileText className="w-5 h-5" />
                           </button>
                         )}
                         {app.cover_letter_content && (
-                          <button 
+                          <button
                             onClick={() => viewApplicationDetails(app)}
-                            className="p-2 text-purple-600 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors" 
+                            className="p-2 text-purple-600 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors"
                             title="View Cover Letter"
                           >
                             <Mail className="w-5 h-5" />
                           </button>
                         )}
+                        <button
+                          onClick={() => handleDeleteApplication(app.id)}
+                          className="p-2 text-red-600 bg-red-50 rounded-lg hover:bg-red-100 transition-colors"
+                          title="Delete application"
+                        >
+                          <Trash2 className="w-4 h-4" />
+                        </button>
                       </div>
                       <div className="flex gap-2">
                         <button
@@ -340,13 +347,6 @@ export default function Dashboard() {
                         >
                           <Eye className="w-4 h-4 inline mr-1" />
                           View
-                        </button>
-                        <button
-                          onClick={() => handleDeleteApplication(app.id)}
-                          className="p-2 text-red-600 bg-red-50 rounded-lg hover:bg-red-100 transition-colors"
-                          title="Delete application"
-                        >
-                          <Trash2 className="w-4 h-4" />
                         </button>
                       </div>
                     </div>

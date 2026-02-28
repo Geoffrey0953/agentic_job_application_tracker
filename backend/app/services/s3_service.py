@@ -9,7 +9,7 @@ class S3Service:
     """
     def __init__(self):
         self.bucket_name = os.getenv("S3_BUCKET_NAME")
-        self.aws_region = os.getenv("AWS_REGION", "us-east-1")
+        self.aws_region = os.getenv("AWS_REGION", "us-west-2")
         
         # Initialize S3 client if bucket is configured
         if self.bucket_name:
